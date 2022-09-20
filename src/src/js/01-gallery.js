@@ -37,7 +37,7 @@ function openFullImg(event) {
   }
 
   const instance = basicLightbox.create(`
-    <img src="${event.target.dataset.sourse}" width="800" height="600">
+    <img src="${event.target.dataset.source}" width="800" height="600">
 `);
 
   instance.show();
