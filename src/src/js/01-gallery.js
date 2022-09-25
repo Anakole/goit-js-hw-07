@@ -42,11 +42,20 @@ function openFullImg(event) {
 
   instance.show();
 
-  container.addEventListener("keydown", (event) => {
+  const closeModal = (event) => {
     if (event.key === "Escape") {
       instance.close();
+      window.removeEventListener("keydown", this);
     }
-  });
+  };
+
+  window.addEventListener("keydown", closeModal);
+
+  // window.addEventListener("keydown", (event) => {
+  //   if (event.key === "Escape") {
+  //     instance.close();
+  //   }
+  // });
 
   console.log(event);
 }

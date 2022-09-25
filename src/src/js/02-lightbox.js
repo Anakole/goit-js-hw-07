@@ -32,13 +32,3 @@ const simple = new SimpleLightbox(".gallery a", {
   captionDelay: 250,
   captionsData: "alt",
 });
-
-function openFullImg(event) {
-  event.preventDefault();
-
-  if (event.target.nodeName !== "IMG") {
-    return;
-  }
-
-  console.log(event);
-}
