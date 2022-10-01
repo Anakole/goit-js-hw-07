@@ -26,8 +26,6 @@ function addGalleryItems(items) {
     .join("");
 }
 
-container.addEventListener("click", openFullImg);
-
 const simple = new SimpleLightbox(".gallery a", {
   captionDelay: 250,
   captionsData: "alt",
